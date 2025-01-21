@@ -21,6 +21,7 @@
     --inter-bold-lg:56px/67.77px var(--inter-regular);
     --inter-md:40px/52px var(--inter-regular);
     --inter-sm:12px/19.08px var(--inter-regular);
+    --inter-irregular:18px/21.78px var(--inter-regular)
 }
 
 body{
