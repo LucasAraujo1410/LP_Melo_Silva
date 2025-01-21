@@ -1,12 +1,13 @@
 #history{
+    height: 500px;
+    margin-top: 100px;
     display: flex;
     background-color: var(--white-geral);
     padding: 50px;
     padding-top: 0%;
-    border: solid 1px;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap:120px;
 }
 
 #division-title{
