@@ -2,7 +2,11 @@
 #servicos{
     top: 600px;
     background-color: var(--white-geral);
+<<<<<<< HEAD
 
+=======
+    width: 100%;
+>>>>>>> 9d6c848cfcb9316935216d9aa457d333e9df1558
     padding: 100px;
 }
 .container{
