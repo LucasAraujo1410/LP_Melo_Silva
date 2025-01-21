@@ -1,0 +1,52 @@
+
+#servicos{
+    top: 600px;
+    background-color: var(--white-geral);
+    width: 100%;
+    padding: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 17.5px;
+}
+
+.item{
+    width: 298.86px;
+    height: 300px;
+    align-items: center;
+    background-color: var(--orange-box);
+}
+
+.item:hover{
+    background-color: var(--orange-hover);
+    position: relative;
+    top: -4px;
+
+}
+
+.container .item p{
+    position: relative;
+    bottom: -15px;
+    right: -24px;
+    text-align: start;
+    font:var(--inetr-regular);
+    font-size: 18px;
+    line-height: 21.78px;
+    color: var(--white-geral);
+}
+
+h2{
+    font: var(--tomorrow-lg);
+    color: var(--black-titles);
+    text-align: center;
+    margin-bottom: 80px;
+    font-weight: 500;
+}
+
+
+
+
+
+

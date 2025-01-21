@@ -1,0 +1,30 @@
+#history{
+    display: flex;
+    background-color: var(--white-geral);
+    padding: 50px;
+    padding-top: 0%;
+    border: solid 1px;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+#division-title{
+    font-size: 40px;
+    width: 544px;
+    height: 185px;
+    font-family: var(--inter-regular);
+}
+
+#division-text{
+    font-size: 13px;
+    font-weight: 300px;
+    width: 534.88px;
+    height: 135px;
+    position: relative;
+    top: 20px;
+}
+
+p{
+    font-weight: 600px;
+}

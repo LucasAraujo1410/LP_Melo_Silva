@@ -1,0 +1,10 @@
+body h1{
+    max-width: 871.31px;
+    position: static;
+    font: var(--inter-bold-lg);
+    color: var(--white-geral);
+    padding-inline: 220px;
+    display: flex;
+    padding-block: 200px;
+}
+
