@@ -1,0 +1,18 @@
+.projetos{
+    background-color: var(--white-geral);
+    height: 293px;
+}
+#id{
+    margin-top: 120px;
+}
+
+.projeto{    
+    padding: 0px;
+    margin: 0px;
+}
+.opacy{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    
+}
