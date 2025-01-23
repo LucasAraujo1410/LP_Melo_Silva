@@ -2,7 +2,7 @@
     height: 500px;
     margin-top: 100px;
     display: flex;
-    background-color: var(--white-geral);
+    background-color: var(--gray-clean-background);
     padding: 50px;
     padding-top: 0%;
     justify-content: center;

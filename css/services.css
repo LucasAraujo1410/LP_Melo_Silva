@@ -1,8 +1,9 @@
 
 #servicos{
     top: 600px;
-    background-color: var(--white-geral);
+    background-color: var(--gray-clean-background);
     padding: 100px;
+    
 }
 .container{
     display: flex;
