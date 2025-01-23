@@ -1,20 +1,22 @@
 .projetos{
     background-color: var(--gray-clean-background);
     height: 293px;
-}
-#id{
-    margin-top: 120px;
+    padding: 120px;
+    
+    
 }
 
+
 .projeto{    
-    padding: 0px;
+    padding: 30px 80px;
     margin: 0px;
+    
 }
 .opacy{
     font: var(--inter-minimal);
     font-weight: 300px;
     display: flex;
     justify-content: center;
-    margin: 30px;
+    
     
 }
