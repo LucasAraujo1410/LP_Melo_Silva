@@ -11,6 +11,8 @@
     margin: 0px;
 }
 .opacy{
+    font: var(--inter-minimal);
+    font-weight: 300px;
     display: flex;
     justify-content: center;
     margin: 30px;
