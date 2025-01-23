@@ -1,7 +1,7 @@
 .box-down{ 
     width: 100%; /* Ajusta a largura para a largura da tela ou do contêiner pai */
     height: auto; /* Ajusta a altura de acordo com o conteúdo */
-    border: solid 1px;
+    
     display: flex;
     flex-wrap: wrap; /* Permite quebra de linha */
     gap: 20px;
@@ -11,7 +11,8 @@
 .box-model{
     width: calc(20% - 20px); /* Faz cada caixa ter 20% da largura, com o gap ajustado */
     height: 91px;
-    border: solid 1px;
+    background-color: var(--white-geral);
+    
 }
 
 /* Especificação para a segunda linha (4 itens) */
