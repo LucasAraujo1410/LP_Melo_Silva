@@ -71,3 +71,20 @@ a{
 a:hover{
     color: var(--orange-buttom);   
 }
+
+/* Estilos do Logo */
+.logo {
+    width: 336px;
+    height: 48.02px;
+    top: 66.8px;
+    left: 96px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
