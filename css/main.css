@@ -1,14 +1,30 @@
-.background{
+.background {
     background-color: var(--gray-background);
 }
 
-h1{
-    max-width: 871.31px;
+h1 {
+    max-width: 871.31px; /* Largura máxima para desktop */
     position: static;
     font: var(--inter-bold-lg);
     color: var(--white-geral);
-    padding-inline: 220px;
+    padding-inline: 220px; /* Padding lateral para desktop */
     display: flex;
-    padding-block: 200px;
+    padding-block: 200px; /* Padding vertical para desktop */
 }
 
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    h1 {
+        max-width: 301.9px; /* Largura máxima para mobile */
+        font-weight: 400; /* Peso da fonte */
+        font-size: 36px; /* Tamanho da fonte */
+        line-height: 43.57px; /* Altura da linha */
+        padding-inline: 20px; /* Padding lateral reduzido para mobile */
+        padding-block: 20px; /* Padding vertical reduzido para mobile */
+        margin: 0; /* Remove margens padrão */
+    }
+
+    .background {
+        height: 246px; /* Altura fixa para mobile */
+    }
+}
