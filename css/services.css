@@ -1,43 +1,41 @@
-
-#servicos{
+#servicos {
     top: 600px;
     background-color: var(--gray-clean-background);
     padding: 100px;
-    
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 17.5px;
 }
 
-.item{
+.item {
     width: 298.86px;
     height: 300px;
     align-items: center;
-    background-color: var(--orange-box);
+    background-color: var(--orange-box); /* Apenas para desktop */
 }
 
-.item:hover{
+.item:hover {
     background-color: var(--orange-hover);
     position: relative;
     top: -4px;
-
 }
 
-.container .item p{
+.container .item p {
     position: relative;
     bottom: -15px;
     right: -24px;
     text-align: start;
-    font:var(--inetr-regular);
+    font: var(--inetr-regular);
     font-size: 18px;
     line-height: 21.78px;
     color: var(--white-geral);
 }
 
-h2{
+h2 {
     font: var(--tomorrow-lg);
     color: var(--black-titles);
     text-align: center;
@@ -45,8 +43,65 @@ h2{
     font-weight: 500;
 }
 
+/* Carrossel apenas no Mobile */
+.carousel-container {
+    display: none; /* Oculta o carrossel por padrão */
+}
 
+@media (max-width: 768px) {
+    .container {
+        display: none; /* Esconde o layout original no mobile */
+    }
 
+    .carousel-container {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        max-width: 100%; /* Garante que não ultrapasse a largura */
+    }
 
+    .carousel {
+        display: flex;
+        transition: transform 0.4s ease-in-out;
+        width: 100%;
+    }
 
+    .item {
+        min-width: 100%; /* Cada item ocupa 100% da largura visível no carrossel */
+        text-align: center;
+        flex-shrink: 0;
+        background-color: transparent; /* Remove o fundo laranja no mobile */
+    }
 
+    .item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: var(--black-titles); /* Cor preta para as setas */
+        font-size: 16px; /* Tamanho menor para as setas */
+        padding: 5px; /* Reduz o espaçamento interno */
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .left-arrow {
+        left: 10px;
+    }
+
+    .right-arrow {
+        right: 10px;
+    }
+
+    .arrow:hover {
+        color: var(--orange-box); /* Destaque laranja ao passar o mouse */
+    }
+}
