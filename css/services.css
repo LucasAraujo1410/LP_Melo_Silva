@@ -15,11 +15,11 @@
     width: 298.86px;
     height: 300px;
     align-items: center;
-    background-color: var(--orange-box); /* Apenas para desktop */
+    background-color: var(--orange-box); /* Fundo sempre presente */
 }
 
 .item:hover {
-    background-color: var(--orange-hover);
+    background-color: var(--orange-hover); /* Apenas no desktop para o hover */
     position: relative;
     top: -4px;
 }
@@ -59,7 +59,7 @@ h2 {
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        max-width: 100%; /* Garante que não ultrapasse a largura */
+        width: 100%; /* Garante que o carrossel não ultrapasse a tela */
     }
 
     .carousel {
@@ -72,7 +72,12 @@ h2 {
         min-width: 100%; /* Cada item ocupa 100% da largura visível no carrossel */
         text-align: center;
         flex-shrink: 0;
-        background-color: transparent; /* Remove o fundo laranja no mobile */
+        background-color: var(--orange-box); /* Fundo fixo no mobile */
+    }
+
+    .item:hover {
+        background-color: var(--orange-box); /* Nenhuma mudança ao interagir */
+        top: 0; /* Sem deslocamento */
     }
 
     .item img {
@@ -80,28 +85,32 @@ h2 {
         height: auto;
     }
 
+    /* Setas do carrossel */
     .arrow {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: transparent;
-        border: none;
-        color: var(--black-titles); /* Cor preta para as setas */
-        font-size: 16px; /* Tamanho menor para as setas */
-        padding: 5px; /* Reduz o espaçamento interno */
+        width: 30px; /* Largura fina */
+        height: 30px; /* Altura proporcional */
+        border: solid var(--black-titles); /* Cor da borda (preto) */
+        border-width: 0 3px 3px 0; /* Cria a seta inclinada */
+        padding: 5px; /* Ajusta o espaço interno */
         cursor: pointer;
         z-index: 2;
+        background-color: transparent; /* Transparente */
     }
 
     .left-arrow {
-        left: 10px;
+        left: -40px; /* Posiciona fora do quadrado da imagem */
+        transform: translateY(-50%) rotate(135deg); /* Inclinação para a esquerda */
     }
 
     .right-arrow {
-        right: 10px;
+        right: -40px; /* Posiciona fora do quadrado da imagem */
+        transform: translateY(-50%) rotate(-45deg); /* Inclinação para a direita */
     }
 
     .arrow:hover {
-        color: var(--orange-box); /* Destaque laranja ao passar o mouse */
+        border-color: var(--orange-box); /* Destaque laranja ao passar o mouse */
     }
 }

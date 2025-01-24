@@ -1,31 +1,31 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.carousel');
-    const items = document.querySelectorAll('.carousel .item');
-    const nextButton = document.getElementById('next');
-    const prevButton = document.getElementById('prev');
+// Seleciona os elementos necessários
+const carousel = document.querySelector('.carousel');
+const items = document.querySelectorAll('.carousel .item');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
 
-    let currentIndex = 0; // Índice do item visível
+// Índice inicial do carrossel
+let currentIndex = 0;
 
-    function updateCarousel() {
-        const offset = -currentIndex * 100; // Calcula o deslocamento
-        carousel.style.transform = `translateX(${offset}%)`;
-    }
+// Função para atualizar a posição do carrossel
+function updateCarousel() {
+    const itemWidth = items[0].offsetWidth; // Largura de um item
+    const newTranslateX = -currentIndex * itemWidth; // Calcula a nova posição
+    carousel.style.transform = `translateX(${newTranslateX}px)`; // Move o carrossel
+}
 
-    nextButton.addEventListener('click', () => {
-        if (currentIndex < items.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0; // Volta para o primeiro item
-        }
-        updateCarousel();
-    });
-
-    prevButton.addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = items.length - 1; // Vai para o último item
-        }
-        updateCarousel();
-    });
+// Event listener para o botão "Anterior"
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+    updateCarousel();
 });
+
+// Event listener para o botão "Próximo"
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+});
+
+// Configurações iniciais do carrossel
+window.addEventListener('resize', updateCarousel); // Garante que o carrossel responda a mudanças no tamanho da tela
+updateCarousel(); // Inicializa a posição do carrossel
