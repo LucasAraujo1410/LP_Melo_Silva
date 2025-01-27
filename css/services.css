@@ -60,6 +60,7 @@ h2 {
         justify-content: center;
         overflow: hidden;
         width: 100%; /* Garante que o carrossel não ultrapasse a tela */
+        padding: 20px 0; /* Adiciona espaço ao redor do carrossel */
     }
 
     .carousel {
@@ -101,12 +102,12 @@ h2 {
     }
 
     .left-arrow {
-        left: -40px; /* Posiciona fora do quadrado da imagem */
+        left: 10px; /* Posiciona mais próximo da borda */
         transform: translateY(-50%) rotate(135deg); /* Inclinação para a esquerda */
     }
 
     .right-arrow {
-        right: -40px; /* Posiciona fora do quadrado da imagem */
+        right: 10px; /* Posiciona mais próximo da borda */
         transform: translateY(-50%) rotate(-45deg); /* Inclinação para a direita */
     }
 
