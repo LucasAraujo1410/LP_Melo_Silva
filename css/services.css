@@ -66,7 +66,7 @@ h2 {
     .carousel {
         display: flex;
         transition: transform 0.4s ease-in-out;
-        width: 100%;
+        width: 700px;
     }
 
     .item {
