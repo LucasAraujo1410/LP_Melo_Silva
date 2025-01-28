@@ -1,4 +1,4 @@
-#history{
+#history {
     height: 500px;
     margin-top: 100px;
     display: flex;
@@ -7,17 +7,17 @@
     padding-top: 0%;
     justify-content: center;
     align-items: center;
-    gap:120px;
+    gap: 120px;
 }
 
-#division-title{
+#division-title {
     font-size: 40px;
     width: 544px;
     height: 185px;
     font-family: var(--inter-regular);
 }
 
-#division-text{
+#division-text {
     font-size: 13px;
     font-weight: 300px;
     width: 534.88px;
@@ -26,6 +26,36 @@
     top: 20px;
 }
 
-p{
+p {
     font-weight: 600px;
+}
+
+@media (max-width: 768px) {
+    #history {
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    #division-title {
+        font-size: 24px;
+        font-weight: 600;
+        width: 326px;
+        line-height: 31.2px;
+    }
+
+    #division-text {
+        font-size: 12px;
+        font-weight: 300;
+        width: 326px;
+        line-height: 19.2px;
+    }
+
+    p {
+        font-weight: 600;
+    }
 }
