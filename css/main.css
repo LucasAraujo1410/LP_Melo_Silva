@@ -24,7 +24,23 @@ h1 {
         margin: 0; /* Remove margens padrão */
     }
 
+    #division-title {
+        font-size: 24px; /* Tamanho da fonte para mobile */
+        font-weight: 400; /* Peso da fonte para mobile */
+        line-height: 31.2px; /* Altura da linha para mobile */
+        text-align: left; /* Alinhamento do texto */
+        text-underline-position: from-font; /* Posição do sublinhado */
+        text-decoration-skip-ink: none; /* Ignorar a tinta do sublinhado */
+    }
+
     .background {
         height: 246px; /* Altura fixa para mobile */
     }
+}
+
+/* Estilos padrão para desktop */
+#division-title {
+    font-size: 36px; /* Tamanho da fonte para desktop */
+    font-weight: 600; /* Peso da fonte para desktop */
+    line-height: 43.57px; /* Altura da linha para desktop */
 }
