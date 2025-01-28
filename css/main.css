@@ -33,14 +33,26 @@ h1 {
         text-decoration-skip-ink: none; /* Ignorar a tinta do sublinhado */
     }
 
+    #division-text {
+        width: 309.94px; /* Largura */
+        height: 180px; /* Altura */
+        top: 1264.72px; /* Posição superior */
+        left: 32px; /* Posição à esquerda */
+        gap: 0px; /* Espaçamento */
+        opacity: 0px; /* Opacidade */
+        font-family: Inter; /* Fonte */
+        font-size: 12px; /* Tamanho da fonte */
+        font-weight: 300; /* Peso da fonte */
+        line-height: 19.2px; /* Altura da linha */
+        text-align: left; /* Alinhamento do texto */
+        text-underline-position: from-font; /* Posição do sublinhado */
+        text-decoration-skip-ink: none; /* Ignorar a tinta do sublinhado */
+        color: #000000; /* Cor do texto */
+    }
+
     .background {
         height: 246px; /* Altura fixa para mobile */
     }
 }
 
 /* Estilos padrão para desktop */
-#division-title {
-    font-size: 36px; /* Tamanho da fonte para desktop */
-    font-weight: 600; /* Peso da fonte para desktop */
-    line-height: 43.57px; /* Altura da linha para desktop */
-}
