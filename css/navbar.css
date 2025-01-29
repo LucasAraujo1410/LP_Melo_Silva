@@ -1,6 +1,7 @@
-nav{
-    padding: 0%;
-    margin: 0%;
+/* Estilos gerais */
+nav {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     padding-block: 66.8px;
@@ -9,33 +10,51 @@ nav{
     align-items: center;
 }
 
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:30px;
+    gap: 30px;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
     cursor: pointer;
 }
 
-.mobile-menu div{
+.mobile-menu div {
     width: 32px;
     height: 2.17px;
-    background:var(--white-geral);
+    background: var(--white-geral);
     margin: 8px;
 }
 
-@media(max-width: 999px){
-    
-    body{
+/* Estilos para links */
+a {
+    font: var(--inter-sm);
+    color: var(--white-geral);
+    transition: 0.3s;
+    text-decoration: none; /* Remover sublinhado padrão */
+}
+
+a:hover {
+    color: var(--orange-buttom);
+}
+
+/* Estilos do Logo */
+.logo {
+    width: 336px;
+    height: 48.02px;
+}
+
+/* Estilos para mobile */
+@media (max-width: 999px) {
+    body {
         overflow-x: hidden;
     }
-    
-    .nav-list{
+
+    .nav-list {
         position: absolute;
         top: 8vh;
         right: 0;
@@ -46,45 +65,23 @@ nav{
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+        transition: transform 0.3s ease-in; /* Adicionar transição suave */
     }
 
-    .nav-list li{
-        margin-left:0;
-        opacity: 0;
+    .nav-list li {
+        opacity: 0; /* Inicialmente invisível */
     }
 
-    .mobile-menu{
+    .mobile-menu {
         display: block;
     }
 
-    .nav-list.active{
-        transform:translateX(0);
+    .nav-list.active {
+        transform: translateX(0); /* Mostrar menu */
     }
-}
 
-a{
-    font: var(--inter-sm);
-    color: var(--white-geral);
-    transition: 0.3s;
-}
-
-a:hover{
-    color: var(--orange-buttom);   
-}
-
-/* Estilos do Logo */
-.logo {
-    width: 336px;
-    height: 48.02px;
-    top: 66.8px;
-    left: 96px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 14.52px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    .nav-list.active li {
+        opacity: 1; /* Mostrar itens do menu */
+        transition: opacity 0.3s ease-in; /* Transição suave */
+    }
 }
