@@ -17,6 +17,7 @@ class MobileNavbar {
 
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
+        document.body.classList.toggle("no-scroll"); // Bloqueia ou desbloqueia rolagem
         this.animateLinks();
     }
 
